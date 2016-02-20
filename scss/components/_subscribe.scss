@@ -2,12 +2,14 @@
   position: relative;
   display: flex;
   min-height: 220px;
-  padding: 35px 20px 80px 25px;
-  background-image: url(../img/bg_blog-subscribe.png);
+  padding: 29px 14px 80px 19px;
+  border: 6px solid transparent;
   background-color: #f8f7f4;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
+  background-image:
+    linear-gradient(#f8f7f4, #f8f7f4),
+    repeating-linear-gradient(-45deg,#fe9e90,#fe9e90 8px,transparent 8px,transparent 16px,#92cdff 16px,#92cdff 24px,transparent 24px,transparent 32px);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
   border-radius: $br_medium;
   &__text {
     @include clear-mp;
@@ -15,9 +17,9 @@
   }
   &__form {
     position: absolute;
-    left: 25px;
-    right: 25px;
-    bottom: 40px;
+    left: 19px;
+    right: 19px;
+    bottom: 34px;
     display: flex;
     justify-content: space-between;
   }

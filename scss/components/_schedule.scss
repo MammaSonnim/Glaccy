@@ -14,5 +14,9 @@
   &__phone {
     font-size: 22px;
     font-weight: $fw_ultra;
+    & a {
+      color: $c_text_alt;
+      text-decoration: none;
+    }
   }
 }

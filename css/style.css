@@ -184,7 +184,7 @@ img {
   left: 12px;
   color: #bbb;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   z-index: 2;
   pointer-events: none;
   transition: -webkit-transform 200ms ease;
@@ -743,20 +743,19 @@ img {
   content: "";
   position: absolute;
   top: 50%;
+  left: 50%;
   width: 1px;
   height: 15px;
   background-color: #353535;
 }
 
 .cart-list__icon-remove:before {
-  left: 50%;
   -webkit-transform: translate(-50%, -50%) rotate(45deg);
       -ms-transform: translate(-50%, -50%) rotate(45deg);
           transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .cart-list__icon-remove:after {
-  left: 50%;
   -webkit-transform: translate(-50%, -50%) rotate(-45deg);
       -ms-transform: translate(-50%, -50%) rotate(-45deg);
           transform: translate(-50%, -50%) rotate(-45deg);
@@ -828,6 +827,11 @@ img {
 .schedule__phone {
   font-size: 22px;
   font-weight: 900;
+}
+
+.schedule__phone a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .slider {
@@ -1192,12 +1196,12 @@ img {
   display: -ms-flexbox;
   display: flex;
   min-height: 220px;
-  padding: 35px 20px 80px 25px;
-  background-image: url(../img/bg_blog-subscribe.png);
+  padding: 29px 14px 80px 19px;
+  border: 6px solid transparent;
   background-color: #f8f7f4;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
+  background-image: linear-gradient(#f8f7f4, #f8f7f4), repeating-linear-gradient(-45deg, #fe9e90, #fe9e90 8px, transparent 8px, transparent 16px, #92cdff 16px, #92cdff 24px, transparent 24px, transparent 32px);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
   border-radius: 15px;
 }
 
@@ -1209,9 +1213,9 @@ img {
 
 .subscribe__form {
   position: absolute;
-  left: 25px;
-  right: 25px;
-  bottom: 40px;
+  left: 19px;
+  right: 19px;
+  bottom: 34px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1878,20 +1882,19 @@ img {
   content: "";
   position: absolute;
   top: 50%;
+  left: 50%;
   width: 2px;
   height: 22px;
   background-color: #353535;
 }
 
 .modal-contact__close:before {
-  left: 50%;
   -webkit-transform: translate(-50%, -50%) rotate(45deg);
       -ms-transform: translate(-50%, -50%) rotate(45deg);
           transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .modal-contact__close:after {
-  left: 50%;
   -webkit-transform: translate(-50%, -50%) rotate(-45deg);
       -ms-transform: translate(-50%, -50%) rotate(-45deg);
           transform: translate(-50%, -50%) rotate(-45deg);

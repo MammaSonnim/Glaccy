@@ -123,16 +123,15 @@
     content: "";
     position: absolute;
     top: 50%;
+    left: 50%;
     width: $width_ps;
     height: $height_ps;
     background-color: #353535;
   }
   &:before {
-    left: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
   }
   &:after {
-    left: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
   }
 }

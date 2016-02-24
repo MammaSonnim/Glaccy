@@ -2,7 +2,6 @@
   position: relative;
   color: $c_text_alt;
   margin-bottom: 38px;
-  transition: all 0.3s ease-out;
   &__inner {
     position: relative;
   }
@@ -57,10 +56,13 @@
     display: none;
     text-align: center;
   }
+  &__btn {
+    opacity: 0;
+    animation: fade-btn 0.3s ease-out 0.3s forwards;
+  }
   &:hover {
     z-index: 2;
-    margin-bottom: -30px;
-    padding-bottom: 68px;
+    animation: roll 0.2s ease-out forwards;
     cursor: pointer;
     &:after {
       content: "";
@@ -74,12 +76,17 @@
       background-color: rgba(248, 247, 244, 0.3);
       box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.15);
       transform: translate(-50%, -50%);
+      animation: stretch 0.2s ease-out;
     }
   }
 
   &:hover &__actions {
     display: block;
   }
+  &:hover &__btn {
+    animation: fade-btn 0.3s ease-out 0.3s forwards;
+  }
+  
   &:hover &__img,
   &:hover &__title,
   &:hover &__actions {
@@ -91,7 +98,7 @@
   &--top {
     margin-bottom: 20px;
     &:hover {
-      margin-bottom: -48px;
+      animation: roll-top 0.2s ease-out forwards;
     }
     &:before {
       content: "";

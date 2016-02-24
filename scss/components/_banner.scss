@@ -1,6 +1,7 @@
 .banner {
   position: relative;
   display: flex;
+  box-sizing: border-box;
   min-height: 230px;
   padding: 12px 20px 80px 20px;
   color: $c_text_alt;

@@ -20,6 +20,49 @@
   }
 }
 
+@keyframes roll {
+  0% {
+    margin-bottom: 38px;
+  }
+  100% {
+    margin-bottom: -30px;
+    padding-bottom: 68px;
+  }
+}
+
+@keyframes roll-top {
+  0% {
+    margin-bottom: 20px;
+  }
+  100% {
+    margin-bottom: -48px;
+    padding-bottom: 68px;
+  }
+}
+
+
+@keyframes stretch {
+  0% {
+    width: 100%;
+    height: 100%;
+  }
+  50% {
+    width: 104%;
+    height: 102%;
+  }
+}
+
+@keyframes fade-btn {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 //@keyframes shake {
 //    0%, 100% {
